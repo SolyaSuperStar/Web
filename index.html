@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Healthy Lifestyle</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script>
+		function validate(form) {
+			var fail = "";
+			if (form.name.value == "") {
+				fail += "Filled name is not correct.";
+			}
+			if (form.tel.value == "") {
+				fail += "Filled telephone is not correct.";
+			}
+			if (form.mail.value == "") {
+				fail += "Filled email is not correct.";
+			}
+			if (form.comment.value == "") {
+				fail += "Filled comment is not correct.";
+			}
+			if (fail !== "") {
+				alert(fail);
+			}
+		}
+
+	</script>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+	<script>
+		window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+</head>
+
+<body>
+	<section>
+		<header>
+
+			<h1>Healthy Lifestyle</h1>
+
+		</header>
+		<menu>
+			<ul>
+				<li>
+					<a href="index.html">Головна</a>
+				</li>
+				<li>
+					<a href="healthyfood.html">Корисні продукти</a>
+				</li>
+				<li>
+					<a href="advices.html">Поради</a>
+				</li>
+				<li>
+					<a href="ressepy.html">Рецепти</a>
+				</li>
+				<li>
+					<a href="#bottom">Контакти</a>
+				</li>
+			</ul>
+		</menu>
+		<center>
+			<page>
+				<h1>Про здоровий спосіб життя</h1>
+				<p>Популярність здорового способу життя зростає з кожним днем все більше та усе стрімкіше. Кожен хоче бути здоровим, відчувати силу та бадьорість не тільки свого духу, а й тіла. Сьогодні ми поговоримо про те, що таке здоровий спосіб життя, та як його дотримуватися.</p>
+				<br>
+				<p>Здоровий спосіб життя – сукупність певних правил, дотримуючись яких, людина довше може залишатись бадьорою та здоровою, а також енергійною та все ж таки щасливою. Адже якщо у людини нічого не болить та вона гарно себе почуває, відповідно, вона може займатись улюбленою справою, яка і приносить їй задоволення, бути з близькими та рідними, дарувати їм своє тепло та ласку.</p>
+			</page>
+			<news>
+				<div>
+					<img src="images/1.jpg">
+					<h3>
+						Правильне харчування
+					</h3>
+					<p>Правильне харчування допомагає людині зберігати працездатність, уникати різних захворювань, підтримувати нормальну вагу, збільшити тривалість життя. На здорове харчування потрібно переходити поступово, щоб це не було стресом для організму.</p>
+					<a href="post1.html">Детальніше</a>
+				</div>
+				<div>
+					<img src="images/2.jpg">
+					<h3>
+						Спортивне харчування:що це?
+					</h3>
+					<p>Спортивне харчування вже давно набуло широкого поширення на американському, західноєвропейському та ринках інших країн. До нас же спортивне харчування «прийшло» порівняно недавно, тому багато спортсменів, особливо новачки не до кінця, або взагалі не розуміють, що це таке.</p>
+					<a href="post2.html">Детальніше</a>
+				</div>
+				<div>
+					<img src="images/3.jpg">
+					<h3>
+						Поради для початківців
+					</h3>
+					<p>Ви вирішили взятися за розум і зайнятися собою і своїм здоров’ям. Вітаємо вас з цим серйозним кроком. Ви на правильному шляху. Але з чого почати? Звичайно потрібно почати з того, без чого немислимий здоровий спосіб життя – із занять фізкультурою і спортом.</p>
+					<a href="post3.html">Детальніше</a>
+				</div>
+			</news>
+		</center>
+		<a name="bottom"></a>
+		<footer>
+			<div>
+				<h6>Про команду</h6>
+				<p>
+					<p>Компанія Herbalife в Україні</p>
+					<p>Україна 04071 Київ вул. Нижній Вал, буд 51</p>
+					<p>Тел. 38 (044) 3937751</p>
+					<p>Тел. гарячої лінії – 0800300035 (безкоштовно для дзвінків по Україні)</p>
+					<a href="">drukr@herbalife.com</a></p>
+			</div>
+			<div>
+				<h6>Меню</h6>
+				<ul>
+					<li>
+						<a href="index.html">Головна</a>
+					</li>
+					<li>
+						<a href="healthyfood.html">Корисні продукти</a>
+					</li>
+					<li>
+						<a href="advices.html">Поради</a>
+					</li>
+					<li>
+						<a href="ressepy.html">Рецепти</a>
+					</li>
+					<li>
+						<a href="">Контакти</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<h6>Контакти</h6>
+				<form onSubmit="validate(this)">
+
+					<input type="text" name="name" value="" placeholder="Ваше ім'я:">
+					<input type="text" name="tel" value="" placeholder="Телефон:">
+					<input type="text" name="mail" value="" placeholder="Email:">
+					<textarea name="comment"></textarea>
+					<input class="send" type="submit" name="send" value="Надіслати">
+
+				</form>
+			</div>
+		</footer>
+	</section>
+
+
+</body>
+
+</html>
